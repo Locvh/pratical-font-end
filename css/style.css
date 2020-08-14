@@ -1,0 +1,70 @@
+body,html{
+  	height:100%;
+  	margin:0;
+  
+}
+.bg-1{
+	position:relative;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+.bg-1{
+	background-image:url('image/3.jpg');
+	min-height:100%;
+	}
+.bg-2{
+	background-image:url('image/8.jpg');
+	min-height:100%;
+	}
+.chevron-container{
+	position:absolute;
+	left:50%;
+	top:50%;
+	text-align:center;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	font-size:36px;
+}
+.chevron-down{
+	position:absolute;
+	font-size:3rem;
+	color:#fff;
+	animation: move 2s ease-out infinite;
+}
+
+.chevron-down:first-child{	
+	animation: move 2s ease-out 1s infinite;
+}
+.chevron-down:first-child(2){	
+	animation: move 2s ease-out 2s infinite;
+}
+
+.paragraph{
+	color:#000;
+	background-color:#FFF;
+	padding:50px 80px;
+	text-align: justify;
+}
+@keyframes move {
+	25%{
+		apacity: 1;
+	}
+	50%{
+		/* rem là khoảng cách*/
+		apacity: 1;
+		transform:translateY(2.28rem);
+	}
+	75%{
+		apacity: 1;
+		transform:translateY(3.12rem);
+	}
+	100%{
+		apacity: 1;
+		transform:translateY(4.48rem)scale(0.5);
+	}
+}
